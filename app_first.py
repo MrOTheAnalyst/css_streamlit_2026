@@ -11,8 +11,9 @@ st.write("CSS 2026 :)")
 
 st.write("day3")
 
-st.title("My first Sreamlit App")
+st.title("Mr O's first Sreamlit App")
 
 number = st.slider("pick a number", 1, 100)
+
 
 st.write(f"you picked {number}")
