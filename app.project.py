@@ -22,8 +22,7 @@ st.markdown(
         border-radius: 50%;
         width: 120px;       /* size of the square */
         height: 120px;      /* same as width */
-        object-fit: cover;  /* crop nicely if needed */
-        margin-right: 18px; /* space between image and text */
+        margin-right: 20px; /* space between image and text */
     }
     .profile-container {
         display: flex;
@@ -120,6 +119,7 @@ with tabs[4]:
 # ---------------- FOOTER ----------------
 st.divider()
 st.caption("© 2026 Rabali Ompha | Streamlit Portfolio")
+
 
 
 
