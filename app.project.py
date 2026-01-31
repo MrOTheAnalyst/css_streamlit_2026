@@ -14,41 +14,56 @@ st.set_page_config(
     layout="wide"
 )
 
-# ---------------- STYLE (ROUND IMAGE + ALIGNMENT) ----------------
-st.markdown(
-    """
-    <style>
-    .profile-img {
-        border-radius: 50%;
-        width: 120px;       /* size of the square */
-        height: 120px;      /* same as width */
-        margin-right: 20px; /* space between image and text */
-    }
-    .profile-container {
-        display: flex;
-        align-items: center; /* vertical center with text */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+# ---------------- CUSTOM CSS ----------------
+st.markdown("""
+<style>
+/* Rounded profile image */
+img {
+    border-radius: 50%;
+}
+
+/* Colored tabs */
+[role="tab"] {
+    background-color: #f0f2f6 !important;
+    color: #333 !important;
+    font-weight: bold;
+}
+[role="tab"]:hover {
+    background-color: #d0e1ff !important;
+}
+
+/* Hover effect for expanders */
+div[data-baseweb="accordion"] > div:hover {
+    background-color: #f9f9f9;
+    border-left: 4px solid #4a90e2;
+    transition: 0.3s;
+}
+
+/* Section background */
+section.main {
+    background-color: #fcfcfc;
+    padding: 10px 20px;
+}
+</style>
+""", unsafe_allow_html=True)
 
 # ---------------- HEADER ----------------
-st.markdown(
-    f"""
-    <div class="profile-container">
-        <img class="profile-img" src="https://raw.githubusercontent.com/MrOTheAnalyst/css_streamlit_2026/main/pic.jpeg">
-        <div>
-            <h1>Rabali Ompha</h1>
-            <p>📧 <b>Email:</b> ompharabali9@gmail.com<br>
-            🏫 <b>Institution:</b> Vaal University of Technology<br>
-            🏢 <b>Department:</b> Engineering and Data Science<br>
-            📍 <b>Location:</b> South Africa</p>
-        </div>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+col1, col2 = st.columns([1, 3])
+
+with col1:
+    st.image(
+        "https://raw.githubusercontent.com/MrOTheAnalyst/css_streamlit_2026/main/pic.jpeg",
+        width=180
+    )
+
+with col2:
+    st.title("Rabali Ompha")
+    st.markdown("""
+📧 **Email:** [ompharabali9@gmail.com](mailto:ompharabali9@gmail.com)  
+🏫 **Institution:** Vaal University of Technology  
+🏢 **Department:** Engineering and Data Science  
+📍 **Location:** South Africa  
+""")
 
 st.divider()
 
@@ -59,12 +74,12 @@ tabs = st.tabs(["🔬 Research", "📊 Projects", "🎓 Education", "🏆 Awards
 with tabs[0]:
     st.header("Research Interests")
     st.markdown("""
-- Production and Workflow analysis  
-- Supply chain and Inventory management  
-- Process optimization and efficiency improvement  
-- Quality Control and Performance Measurement (KPIs)  
-- Data analysis for operational and business decision-making  
-- Data visualization and reporting using dashboards  
+- 🏭 Production and Workflow analysis  
+- 📦 Supply chain and Inventory management  
+- ⚙️ Process optimization and efficiency improvement  
+- 📊 Quality Control and Performance Measurement (KPIs)  
+- 📈 Data analysis for operational and business decision-making  
+- 📉 Data visualization and reporting using dashboards  
 """)
 
 # ---------------- PROJECTS ----------------
@@ -76,12 +91,14 @@ with tabs[1]:
             "Analyzed health risk factors associated with smoking using Power BI dashboards "
             "to support data-driven health insights."
         )
+        st.markdown("[View Project Example](https://www.powerbi.com/)")  # Replace with actual link
 
     with st.expander("💰 TapNext Finance Dashboard – Excel"):
         st.write(
             "Built an interactive financial dashboard in Excel to track performance, trends, "
             "and key financial indicators."
         )
+        st.markdown("[View Project Example](https://www.microsoft.com/en-us/microsoft-365/excel)")  # Replace with actual link
 
 # ---------------- EDUCATION ----------------
 with tabs[2]:
@@ -112,13 +129,16 @@ with tabs[3]:
 with tabs[4]:
     st.header("Contact Information")
     st.markdown("""
-📞 **Phone:** +27 76 128 5492  
-📧 **Email:** ompharabali9@gmail.com  
+📞 **Phone:** [+27 76 128 5492](tel:+27761285492)  
+📧 **Email:** [ompharabali9@gmail.com](mailto:ompharabali9@gmail.com)  
 """)
+    st.button("Send Email", key="email_button")  # Optional interactive button
 
 # ---------------- FOOTER ----------------
 st.divider()
 st.caption("© 2026 Rabali Ompha | Streamlit Portfolio")
+
+
 
 
 
