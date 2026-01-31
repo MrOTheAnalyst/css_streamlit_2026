@@ -14,12 +14,24 @@ st.set_page_config(
     layout="wide"
 )
 
+# ---------------- STYLE (ROUND IMAGE) ----------------
+st.markdown(
+    """
+    <style>
+    img {
+        border-radius: 50%;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # ---------------- HEADER ----------------
 col1, col2 = st.columns([1, 3])
 
 with col1:
     st.image(
-        "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+        "https://drive.google.com/uc?id=1JniRX9ySyvoT_6qXdS26xfk4-khjvTB1",
         width=180
     )
 
@@ -41,6 +53,8 @@ tabs = st.tabs(["🔬 Research", "📊 Projects", "🎓 Education", "🏆 Awards
 with tabs[0]:
     st.header("Research Interests")
     st.markdown("""
+- Production and Workflow analysis  
+- Supply chain and Inventory management  
 - Process optimization and efficiency improvement  
 - Quality Control and Performance Measurement (KPIs)  
 - Data analysis for operational and business decision-making  
@@ -70,7 +84,7 @@ with tabs[2]:
 🎓 **Diploma in Industrial Engineering**  
 📍 Vaal University of Technology  
 📅 *In progress*  
-⏳ **Expected completion:** 2026
+⏳ **Expected completion:** 2026  
 """)
 
 # ---------------- AWARDS ----------------
@@ -99,3 +113,4 @@ with tabs[4]:
 # ---------------- FOOTER ----------------
 st.divider()
 st.caption("© 2026 Rabali Ompha | Streamlit Portfolio")
+
