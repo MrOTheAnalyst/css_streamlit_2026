@@ -38,7 +38,7 @@ st.markdown(
 st.markdown(
     f"""
     <div class="profile-container">
-        <img class="profile-img" src="https://raw.githubusercontent.com/MrOTheAnalyst/css_streamlit_2026/main/profile.jpg.jpeg">
+        <img class="profile-img" src="https://raw.githubusercontent.com/MrOTheAnalyst/css_streamlit_2026/main/pic.jpeg">
         <div>
             <h1>Rabali Ompha</h1>
             <p>📧 <b>Email:</b> ompharabali9@gmail.com<br>
@@ -120,3 +120,4 @@ with tabs[4]:
 # ---------------- FOOTER ----------------
 st.divider()
 st.caption("© 2026 Rabali Ompha | Streamlit Portfolio")
+
