@@ -58,12 +58,13 @@ with col1:
 
 with col2:
     st.title("Rabali Ompha")
+    # Using HTML <br> for proper line breaks
     st.markdown("""
-📧 **Email:** [ompharabali9@gmail.com](mailto:ompharabali9@gmail.com)  
-🏫 **Institution:** Vaal University of Technology
-🏢 **Faculty:** Engineering  
-📍 **Location:** South Africa  
-""")
+📧 <b>Email:</b> <a href="mailto:ompharabali9@gmail.com">ompharabali9@gmail.com</a><br>
+🏫 <b>Institution:</b> Vaal University of Technology<br>
+🏢 <b>Faculty:</b> Engineering<br>
+📍 <b>Location:</b> South Africa
+""", unsafe_allow_html=True)
 
 st.divider()
 
@@ -93,9 +94,9 @@ with tabs[1]:
         )
         st.markdown("[View Power BI Dashboard](https://1drv.ms/u/c/e1abadb451e0b347/IQDOsehRgX6pSYtEJo50RQ-pAczc72mHR7oUgi-0S46WGmg?e=UrCA65)")
 
-    with st.expander("👕 Sleak & Co – Clothing Brand Dashboard – Excel/OneDrive"):
+    with st.expander("👕 Sleak & Co Dashboard - Excel"):
         st.write(
-            "Built an interactive dashboard to track clothing sales, inventory, and key business trends "
+            "Built an interactive dashboard to track clothing sales, inventory, and key business trends."
         )
         st.markdown("[View Excel Dashboard](https://1drv.ms/x/c/e1abadb451e0b347/IQA4erERPT_NRrE-rAR_KlwQAcPcc8mBGws6kvneZZUlNDg?e=ddyf3D)")
 
@@ -115,7 +116,7 @@ with tabs[3]:
     st.markdown("""
 - 🟡 Six Sigma White Belt  
 - 📊 Certified Data Analytics – Cisco Networking Academy  
-- 💻 Certified Data Science Tools:
+- 💻 Certified Data Science Tools - IBM:
   - Python  
   - R  
   - SQL  
@@ -137,3 +138,9 @@ with tabs[4]:
 # ---------------- FOOTER ----------------
 st.divider()
 st.caption("© 2026 Rabali Ompha | Streamlit Portfolio")
+
+
+# ---------------- FOOTER ----------------
+st.divider()
+st.caption("© 2026 Rabali Ompha | Streamlit Portfolio")
+
