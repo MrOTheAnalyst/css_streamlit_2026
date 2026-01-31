@@ -60,7 +60,7 @@ with col2:
     st.title("Rabali Ompha")
     st.markdown("""
 📧 **Email:** [ompharabali9@gmail.com](mailto:ompharabali9@gmail.com)  
-🏫 **Institution:** Vaal University of Technology  
+🏫 **Institution:** Vaal University of Technology
 🏢 **Faculty:** Engineering  
 📍 **Location:** South Africa  
 """)
@@ -91,14 +91,13 @@ with tabs[1]:
             "Analyzed health risk factors associated with smoking using Power BI dashboards "
             "to support data-driven health insights."
         )
-        st.markdown("[View Project Example](https://www.powerbi.com/)")  # Replace with actual link
+        st.markdown("[View Power BI Dashboard](https://1drv.ms/u/c/e1abadb451e0b347/IQDOsehRgX6pSYtEJo50RQ-pAczc72mHR7oUgi-0S46WGmg?e=UrCA65)")
 
-    with st.expander("💰 TapNext Finance Dashboard – Excel"):
+    with st.expander("👕 Sleak & Co – Clothing Brand Dashboard – Excel/OneDrive"):
         st.write(
-            "Built an interactive financial dashboard in Excel to track performance, trends, "
-            "and key financial indicators."
+            "Built an interactive dashboard to track clothing sales, inventory, and key business trends "
         )
-        st.markdown("[View Project Example](https://www.microsoft.com/en-us/microsoft-365/excel)")  # Replace with actual link
+        st.markdown("[View Excel Dashboard](https://1drv.ms/x/c/e1abadb451e0b347/IQA4erERPT_NRrE-rAR_KlwQAcPcc8mBGws6kvneZZUlNDg?e=ddyf3D)")
 
 # ---------------- EDUCATION ----------------
 with tabs[2]:
@@ -110,7 +109,7 @@ with tabs[2]:
 ⏳ **Expected completion:** 2026  
 """)
 
-# ---------------- AWARDS ----------------
+# ---------------- AWARDS & CERTIFICATIONS ----------------
 with tabs[3]:
     st.header("Awards & Certifications")
     st.markdown("""
@@ -122,8 +121,8 @@ with tabs[3]:
   - SQL  
   - Excel  
   - Tableau  
-  - Power BI 
-  - Data Science Fundamentals (Short Course)
+  - Power BI  
+  - Data Science Fundamentals (Short Course)  
 """)
 
 # ---------------- CONTACT ----------------
@@ -138,10 +137,3 @@ with tabs[4]:
 # ---------------- FOOTER ----------------
 st.divider()
 st.caption("© 2026 Rabali Ompha | Streamlit Portfolio")
-
-
-
-
-
-
-
