@@ -61,7 +61,7 @@ with col2:
     st.markdown("""
 📧 **Email:** [ompharabali9@gmail.com](mailto:ompharabali9@gmail.com)  
 🏫 **Institution:** Vaal University of Technology  
-🏢 **Department:** Engineering and Data Science  
+🏢 **Faculty:** Engineering  
 📍 **Location:** South Africa  
 """)
 
@@ -122,7 +122,8 @@ with tabs[3]:
   - SQL  
   - Excel  
   - Tableau  
-  - Power BI  
+  - Power BI 
+  - Data Science Fundamentals (Short Course)
 """)
 
 # ---------------- CONTACT ----------------
@@ -137,6 +138,7 @@ with tabs[4]:
 # ---------------- FOOTER ----------------
 st.divider()
 st.caption("© 2026 Rabali Ompha | Streamlit Portfolio")
+
 
 
 
