@@ -32,9 +32,9 @@ col1, col2 = st.columns([1, 3])
 with col1:
     st.image(
         "import streamlit as st
-
+        
 st.image(
-    "https://raw.githubusercontent.com/MrOTheAnalyst/css_streamlit_2026/main/profile.jpg",
+    "https://raw.githubusercontent.com/MrOTheAnalyst/css_streamlit_2026/main/profile.jpg.jpeg",
     width=180
 )
 
@@ -116,6 +116,7 @@ with tabs[4]:
 # ---------------- FOOTER ----------------
 st.divider()
 st.caption("© 2026 Rabali Ompha | Streamlit Portfolio")
+
 
 
 
