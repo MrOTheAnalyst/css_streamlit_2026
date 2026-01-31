@@ -14,12 +14,20 @@ st.set_page_config(
     layout="wide"
 )
 
-# ---------------- STYLE (ROUND IMAGE) ----------------
+# ---------------- STYLE (ROUND IMAGE + ALIGNMENT) ----------------
 st.markdown(
     """
     <style>
-    img {
+    .profile-img {
         border-radius: 50%;
+        width: 120px;       /* smaller size */
+        height: 120px;      /* force square for perfect circle */
+        object-fit: cover;  /* crop nicely */
+        margin-right: 15px; /* space between image and text */
+    }
+    .profile-container {
+        display: flex;
+        align-items: center; /* vertical center with text */
     }
     </style>
     """,
@@ -27,22 +35,21 @@ st.markdown(
 )
 
 # ---------------- HEADER ----------------
-col1, col2 = st.columns([1, 3])
-
-with col1:       
-    st.image(
-        "https://raw.githubusercontent.com/MrOTheAnalyst/css_streamlit_2026/main/profile.jpg.jpeg",
-        width=180
-    )
-
-with col2:
-    st.title("Rabali Ompha")
-    st.markdown("""
-📧 **Email:** ompharabali9@gmail.com  
-🏫 **Institution:** Vaal University of Technology  
-🏢 **Department:** Engineering and Data Science  
-📍 **Location:** South Africa  
-""")
+st.markdown(
+    f"""
+    <div class="profile-container">
+        <img class="profile-img" src="https://raw.githubusercontent.com/MrOTheAnalyst/css_streamlit_2026/main/profile.jpg.jpeg">
+        <div>
+            <h1>Rabali Ompha</h1>
+            <p>📧 <b>Email:</b> ompharabali9@gmail.com<br>
+            🏫 <b>Institution:</b> Vaal University of Technology<br>
+            🏢 <b>Department:</b> Engineering and Data Science<br>
+            📍 <b>Location:</b> South Africa</p>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 st.divider()
 
@@ -113,9 +120,3 @@ with tabs[4]:
 # ---------------- FOOTER ----------------
 st.divider()
 st.caption("© 2026 Rabali Ompha | Streamlit Portfolio")
-
-
-
-
-
-
