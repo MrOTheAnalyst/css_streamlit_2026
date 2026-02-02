@@ -138,9 +138,3 @@ with tabs[4]:
 # ---------------- FOOTER ----------------
 st.divider()
 st.caption("© 2026 Rabali Ompha | Streamlit Portfolio")
-
-
-# ---------------- FOOTER ----------------
-st.divider()
-st.caption("© 2026 Rabali Ompha | Streamlit Portfolio")
-
