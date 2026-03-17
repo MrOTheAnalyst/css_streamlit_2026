@@ -58,15 +58,16 @@ with col1:
 
 with col2:
     st.title("Rabali Ompha")
-    # Using HTML <br> for proper line breaks
+    # Email, Institution, Faculty, Location
     st.markdown("""
 📧 <b>Email:</b> <a href="mailto:ompharabali9@gmail.com">ompharabali9@gmail.com</a><br>
 🏫 <b>Institution:</b> Vaal University of Technology<br>
 🏢 <b>Faculty:</b> Engineering<br>
 📍 <b>Location:</b> South Africa
 """, unsafe_allow_html=True)
-
-   st.markdown("""
+    
+    # ---------------- BIO / HEADLINE ----------------
+    st.markdown("""
 **About Me:**  
 - **Data Analyst | Machine Learning Junior | Aspiring Industrial Engineer**  
 - Passionate about improving systems, processes, and efficiency  
