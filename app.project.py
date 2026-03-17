@@ -66,6 +66,14 @@ with col2:
 📍 <b>Location:</b> South Africa
 """, unsafe_allow_html=True)
 
+   st.markdown("""
+**About Me:**  
+- **Data Analyst | Machine Learning Junior | Aspiring Industrial Engineer**  
+- Passionate about improving systems, processes, and efficiency  
+- Skilled in building dashboards for data-driven decisions  
+- Exploring Machine Learning to create predictive models and smarter solutions
+""")
+
 st.divider()
 
 # ---------------- TABS ----------------
